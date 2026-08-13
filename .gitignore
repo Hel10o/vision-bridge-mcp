@@ -1,0 +1,29 @@
+# 运行时产物
+cache/
+logs/
+scratch/
+
+# 本机工具配置与编辑器状态
+.claude/
+.codex/
+.agents/
+.vscode/
+
+# 本地环境变量与凭据
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.local.json
+
+# Node.js / 测试产物
+node_modules/
+coverage/
+.nyc_output/
+*.log
+
+# 操作系统文件
+.DS_Store
+Thumbs.db

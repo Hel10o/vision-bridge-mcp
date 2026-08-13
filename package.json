@@ -1,0 +1,44 @@
+{
+  "name": "vision-bridge-mcp",
+  "version": "2.0.0",
+  "description": "给纯文本大模型（DeepSeek 等）加识图能力的 MCP 服务器：把图片交给任意 OpenAI 兼容的视觉 API 转成文字。零依赖。",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "vision",
+    "ocr",
+    "deepseek",
+    "glm-4v",
+    "multimodal"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hel10o/vision-bridge-mcp.git"
+  },
+  "homepage": "https://github.com/Hel10o/vision-bridge-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Hel10o/vision-bridge-mcp/issues"
+  },
+  "type": "commonjs",
+  "main": "server.js",
+  "bin": {
+    "vision-bridge": "server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/run-tests.js",
+    "test:live": "node test/run-tests.js --live",
+    "doctor": "node server.js --doctor",
+    "ping": "node --use-env-proxy server.js --ping",
+    "tools": "node server.js --tools"
+  },
+  "files": [
+    "server.js",
+    "lib/",
+    "README.md"
+  ]
+}
